@@ -14,6 +14,6 @@ install
 
 test
 ==========
-- go to any dir under example_projects/ that has a Rakefile.rb
+- go to any dir under example_projects/proj1/ that has a Rakefile.rb
 - `rake`
 (At least one of these dirs is broken at the moment because the system can't handle a source file (ie .cpp -- .h is fine) in an external srcroot.)
