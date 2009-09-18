@@ -1,0 +1,19 @@
+rake-based build system
+Evan Herbst, 9 / 17 / 09
+---------------------------
+
+Docs and such are at http://abstract.cs.washington.edu/~eherbst/projects/build_system_for_c_cpp/; you can also contact me from there.
+
+install
+==========
+- install ruby, rake, rgl (ruby graph library)
+  - aptitude install ruby rubygems
+  - gem install rake rgl
+- add the rake executable to $PATH
+- add " -I$BUILD_SYSTEM_DIR" to $RUBYOPT, where $BUILD_SYSTEM_DIR is the directory above build_system/
+
+test
+==========
+- go to any dir under example_projects/ that has a Rakefile.rb
+- `rake`
+(At least one of these dirs is broken at the moment because the system can't handle a source file (ie .cpp -- .h is fine) in an external srcroot.)
